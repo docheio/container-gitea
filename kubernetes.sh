@@ -13,7 +13,7 @@ metadata:
 type: Opaque
 stringData:
   app.ini: |-
-    APP_NAME = Gitea: Git with a cup of tea
+    APP_NAME = docheio: git with a cup of tea
     RUN_MODE = prod
     
     [repository]
@@ -26,7 +26,7 @@ stringData:
     TEMP_PATH = /data/gitea/uploads
     
     [server]
-    APP_DATA_PATH = /data/gitea
+    APP_DATA_PATH    = /data/gitea
     DOMAIN           = localhost
     SSH_DOMAIN       = localhost
     HTTP_PORT        = 3000
@@ -37,13 +37,13 @@ stringData:
     LFS_START_SERVER = false
     
     [database]
-    PATH = /data/gitea/gitea.db
-    DB_TYPE = mysql
-    HOST = gitea-mariadb:3306
-    NAME = database
-    USER = $DB_USERNAME
-    PASSWD = $DB_PASSWORD
-    LOG_SQL = false
+    PATH     = /data/gitea/gitea.db
+    DB_TYPE  = mysql
+    HOST     = gitea-mariadb:3306
+    NAME     = database
+    USER     = $DB_USERNAME
+    PASSWD   = $DB_PASSWORD
+    LOG_SQL  = false
     SSL_MODE = disable
     
     [indexer]
@@ -53,21 +53,21 @@ stringData:
     PROVIDER_CONFIG = /data/gitea/sessions
     
     [picture]
-    AVATAR_UPLOAD_PATH = /data/gitea/avatars
+    AVATAR_UPLOAD_PATH            = /data/gitea/avatars
     REPOSITORY_AVATAR_UPLOAD_PATH = /data/gitea/repo-avatars
     
     [attachment]
     PATH = /data/gitea/attachments
     
     [log]
-    MODE = console
-    LEVEL = info
+    MODE      = console
+    LEVEL     = info
     ROOT_PATH = /data/gitea/log
     
     [security]
-    INSTALL_LOCK = false
-    SECRET_KEY   =
-    REVERSE_PROXY_LIMIT = 1
+    INSTALL_LOCK                  = false
+    SECRET_KEY                    =
+    REVERSE_PROXY_LIMIT           = 1
     REVERSE_PROXY_TRUSTED_PROXIES = *
     
     [service]
